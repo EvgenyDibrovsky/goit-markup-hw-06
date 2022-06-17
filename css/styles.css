@@ -1049,7 +1049,7 @@ a {
 
 .checkbox-policy-label::before {
     content: '';
-    display: inline-block;
+    display: block;
     width: 16px;
     height: 15px;
     border: 2px solid var(--checkbox-primary-color);
@@ -1071,28 +1071,12 @@ a {
 }
   
 .checkbox-policy:focus + .checkbox-policy-label::before {
-    outline: 1px solid var(--checkbox-accent-color);
+    outline: 1px solid var(--checkbox-primary-color);
 }
-
-.checkbox-policy-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 15px;
-  }
-
-
-
-
-
 
 .checkbox-policy-link {
     text-decoration-line: underline; 
     color: var(--accent-color);
 }
-
-
 
 /* -------------------- /BACKDROP -------------------- */
