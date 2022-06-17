@@ -1071,7 +1071,7 @@ a {
 }
   
 .checkbox-policy:focus + .checkbox-policy-label::before {
-    outline: 1px solid var(--checkbox-primary-color);
+    outline: 2px solid var(--checkbox-primary-color);
 }
 
 .checkbox-policy-link {
