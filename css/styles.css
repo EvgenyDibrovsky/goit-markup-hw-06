@@ -779,7 +779,7 @@ a {
 
 .widgent-contacts {
     display: block;
-    min-width: 231px;
+    flex-grow: 1;
     margin-right: 70px;
 }
 
