@@ -1034,18 +1034,21 @@ a {
 }
 
 
+.checkbox-policy {
+    position: absolute;
+}
 
 .checkbox-policy-label {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
     margin-bottom: 30px;
 }
+
 
 .checkbox-policy-label::before {
     content: '';
@@ -1057,22 +1060,21 @@ a {
     cursor: pointer;
     margin-right: 10px;
 
-    transition: fibackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+.checkbox-policy:focus + .checkbox-policy-label::before {
+    border-color: var(--accent-color);
+}
   
 .checkbox-policy:checked + .checkbox-policy-label::before {
-    width: 16px;
-    height: 15px;
     border-color: transparent;
     background-image: url(../images/checkbox.svg);
-    background-size: contain;
+    background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
 }
   
-.checkbox-policy:focus + .checkbox-policy-label::before {
-    outline: 2px solid var(--checkbox-primary-color);
-}
 
 .checkbox-policy-link {
     text-decoration-line: underline; 
