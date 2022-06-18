@@ -1033,7 +1033,6 @@ a {
     fill: var(--modal-form-accent-icon);
 }
 
-
 .checkbox-policy {
     position: absolute;
 }
@@ -1048,7 +1047,6 @@ a {
     color: var(--secondary-font-color);
     margin-bottom: 30px;
 }
-
 
 .checkbox-policy-label::before {
     content: '';
@@ -1070,12 +1068,11 @@ a {
 .checkbox-policy:checked + .checkbox-policy-label::before {
     border-color: transparent;
     background-image: url(../images/checkbox.svg);
-    background-size: cover;
+    background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
 }
-  
-
+ 
 .checkbox-policy-link {
     text-decoration-line: underline; 
     color: var(--accent-color);
